@@ -1,0 +1,140 @@
+/* Master styles */
+
+body {
+    margin: 25px;
+    font-family: "Lato" sans-serif;
+    background-color: #000000;
+}
+
+div {
+    color: #fff;
+}
+
+b {
+    color:darkslategrey;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* Nav styles */
+
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 38px;
+}
+.left-side {
+    display: flex;
+}
+.nav-wrapper > .left-side > div {
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+.left-side img{
+    align-self: flex-end;
+    margin-right: 200%;
+    width: 10%;
+
+}
+.nav-link-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a {
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover {
+    border-bottom: 1px solid white;
+}
+.nav-link-wrapper a:hover {
+    color: white;
+}
+
+.active-nav-link {
+    border-bottom: 1px solid #d91e18;
+}
+
+.active-nav-link a {
+    color: white !important;
+}
+/* Portfolio styles */
+.portfolio-items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.portfolio-item-wrapper{
+    position: relative;
+}
+
+.portfilio-img-background {
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 80%;
+}
+
+.img-text-wrapper {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.logo-wrapper img{
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.img-text-wrapper .suubtitle {
+    transition: 1s;
+    font-weight: 600;
+    color: transparent;
+}
+
+/* Needs to be more specific woth selector*/
+.img-text-wrapper:hover .suubtitle {
+    font-weight: 600;
+    color: #d91e18;
+}
+
+.img-darken {
+    transition: 1s;
+    filter: brightness(10%);
+}
+
+
+
+/* About page */
+.content-wrapper {
+    color: white;
+}
+
+.h1-wrapper img{
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.copyright-sign {
+    color: #d91e18;
+    font-size: x-large;
+}
